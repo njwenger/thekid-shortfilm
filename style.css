@@ -187,3 +187,215 @@ nav {
 
 .video-wrap {
   position: relative;
+  z-index: 1;
+  max-width: var(--maxw);
+  margin: -88px auto 60px;
+  padding: 0 24px;
+}
+
+.video-frame {
+  position: relative;
+  padding-top: 56.25%;
+  background: #111;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.video-frame iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
+
+section {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 55px 24px;
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--play);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 27px;
+  color: var(--cream);
+  margin: 0 0 26px;
+}
+
+.synopsis p, .about p {
+  font-family: var(--open-sans);
+  font-weight: 400;
+  font-size: 16.2px;
+  line-height: 1.75;
+  color: var(--cream);
+  max-width: 700px;
+  margin: 0 auto 18px;
+}
+
+.divider-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 10px 24px 0;
+}
+
+.divider {
+  width: 56px;
+  height: 1px;
+  background: rgba(233,224,211,0.3);
+  display: block;
+}
+
+/* ---- Credit roll (Cast / Crew) ---- */
+
+.credit-grid {
+  display: grid;
+  grid-template-columns: 220px 240px;
+  column-gap: 24px;
+  row-gap: 13px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.credit-grid .c-role,
+.credit-grid .c-name {
+  align-self: center;
+  font-family: var(--open-sans);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: var(--cream);
+  white-space: normal;
+}
+
+.credit-grid .c-role {
+  text-align: right;
+  font-weight: 400;
+}
+
+.credit-grid .c-name {
+  text-align: left;
+  font-weight: 700;
+}
+
+.credit-grid .c-role.spacer,
+.credit-grid .c-name.spacer {
+  height: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 24px 60px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.contact-block {
+  text-align: center;
+  padding: 120px 24px;
+}
+
+.contact-block h1 {
+  font-family: var(--play);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 27px;
+  color: var(--cream);
+  margin-bottom: 30px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.contact-block p {
+  font-family: var(--open-sans);
+  font-size: 20px;
+  margin: 6px 0;
+  color: var(--cream);
+}
+
+/* ---- Mobile ---- */
+
+@media (max-width: 640px) {
+  nav {
+    padding: 14px 16px;
+    gap: 10px;
+  }
+
+  .brand {
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
+
+  .navlinks {
+    gap: 14px;
+    font-size: 9px;
+    letter-spacing: 0.6px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 50px 16px 110px;
+  }
+
+  .hero-bg {
+    background-size: cover;
+  }
+
+  .kicker {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  .title {
+    font-size: clamp(32px, 13vw, 50px);
+    letter-spacing: 8px;
+  }
+
+  .laurels {
+    flex-wrap: wrap;
+    gap: 16px 14px;
+    margin-top: 28px;
+    padding: 0;
+  }
+
+  .laurel-item img {
+    height: 32px;
+  }
+
+  .laurel-item img.laurel-crossroads {
+    height: 44px;
+  }
+
+  .video-wrap {
+    margin-top: -50px;
+    padding: 0 16px;
+  }
+
+  section {
+    padding: 40px 16px;
+  }
+
+  .contact-block {
+    padding: 70px 16px;
+  }
+
+  .credit-grid {
+    grid-template-columns: 1fr;
+    row-gap: 3px;
+    width: 100%;
+  }
+
+  .credit-grid .c-role,
+  .credit-grid .c-name {
+    text-align: center;
+  }
+
+  .credit-grid .c-name {
+    margin-bottom: 10px;
+  }
+
+  .credit-grid .c-role.spacer,
+  .credit-grid .c-name.spacer {
+    height: 6px;
+  }
+}
