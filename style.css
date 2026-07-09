@@ -366,6 +366,10 @@ footer {
     height: 28px;
   }
 
+  .laurel-item:nth-child(3) img {
+    height: 18px;
+  }
+
   .video-wrap {
     margin-top: -60px;
     padding: 0 16px;
