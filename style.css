@@ -334,7 +334,7 @@ footer {
 
   .hero {
     min-height: auto;
-    padding: 50px 16px 110px;
+    padding: 50px 16px 85px;
   }
 
   .hero-bg {
@@ -352,22 +352,22 @@ footer {
   }
 
   .laurels {
-    flex-wrap: wrap;
-    gap: 16px 14px;
-    margin-top: 28px;
+    flex-wrap: nowrap;
+    gap: 6px;
+    margin-top: 22px;
     padding: 0;
   }
 
   .laurel-item img {
-    height: 32px;
+    height: 20px;
   }
 
   .laurel-item img.laurel-crossroads {
-    height: 44px;
+    height: 28px;
   }
 
   .video-wrap {
-    margin-top: -50px;
+    margin-top: -60px;
     padding: 0 16px;
   }
 
